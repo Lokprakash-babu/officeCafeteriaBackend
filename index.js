@@ -7,7 +7,7 @@ require('dotenv').config();
 const MongoClient = require('mongodb').MongoClient
 
 app.use(cors());
-MongoClient.connect(`mongodb+srv://${process.env.DB_NAME}:${process.env.DB_PASSWORD}@cluster0.jff4e.mongodb.net/hack?retryWrites=true&w=majority`,{ useUnifiedTopology: true })
+MongoClient.connect(`mongodb+srv://test:test@cluster0.jff4e.mongodb.net/hack?retryWrites=true&w=majority`,{ useUnifiedTopology: true })
 .then(
     (client)=>{
         console.log('success in connection');
